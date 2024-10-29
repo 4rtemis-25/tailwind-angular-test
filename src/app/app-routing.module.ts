@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarMainComponent } from './Pages/Components/navbar-main/navbar-main.component';
+import { LandingPageComponent } from './Pages/Components/landing-page/landing-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
-    component: NavbarMainComponent,
+    component: LandingPageComponent,
   },
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
